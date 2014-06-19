@@ -196,7 +196,7 @@ public class Wow {
 		ArrayList<Character> characters = myCharactersAfterMyArchNemesisHacksIntoMyAccount();
 		// from the characters above, find out which Level character is missing
 		int sumOfwowLevels = 0;
-		int sumOfwiwLevelsAfterMissing =0;
+		int sumOfwowLevelsAfterMissing =0;
 		for (int i = 1; i < 86; i++)
 		{
 			sumOfwowLevels += i;
@@ -204,12 +204,12 @@ public class Wow {
 		}
 		for (Character character: characters )
 		{
-			sumOfwiwLevelsAfterMissing += character.getLevel();
+			sumOfwowLevelsAfterMissing += character.getLevel();
 			
 		}
 		
 		
-		return sumOfwowLevels - sumOfwiwLevelsAfterMissing;
+		return sumOfwowLevels - sumOfwowLevelsAfterMissing;
 	}
 
 }
