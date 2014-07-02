@@ -1,12 +1,43 @@
 package ca.bcit.comp2613.agile.model;
 
+
+import java.util.List;
+
 public class ScrumMaster {
 	private String id;
 	private String firstName;
 	private String lastName;
 	private String sprintTaking;
+	private static List<ScrumMember> member;
+	
+	
+	/**
+	 * @return the member
+	 */
+	public static List<ScrumMember> getMember() {
+		return member;
+	}
+	/**
+	 * @param member the member to set
+	 */
+	public static void setMember(List<ScrumMember> members) {
+		members = member;
+	}
 	public enum Gender {
 	    Male,Female
+	}
+	
+	
+	/**
+	 * @param id
+	 * @param firstName
+	 * @param lastName
+	 */
+	public ScrumMaster(String id, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 	/**
 	 * @return the id

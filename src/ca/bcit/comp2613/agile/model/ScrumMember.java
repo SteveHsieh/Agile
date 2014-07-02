@@ -3,11 +3,20 @@ package ca.bcit.comp2613.agile.model;
 public class ScrumMember {
 	private String id;
 	private String firstName;
+	/**
+	 * @param id2
+	 * @param firstName
+	 * @param lastName
+	 */
+	public ScrumMember(String id2, String firstName, String lastName) {
+		super();
+		this.id = id2;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 	private String lastName;
 	private String sprintTaking;
-	public enum Gender {
-	    Male,Female
-	}
+
 	/**
 	 * @return the id
 	 */

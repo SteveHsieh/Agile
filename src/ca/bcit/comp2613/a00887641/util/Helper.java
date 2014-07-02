@@ -1,4 +1,4 @@
-package ca.bcit.comp2613.a00887641.util;
+ackage ca.bcit.comp2613.a00887641.util;
 
 import java.util.ArrayList;
 import java.util.Random;
